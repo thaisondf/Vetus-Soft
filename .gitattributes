@@ -1,0 +1,2 @@
+bin/Debug/* filter=lfs diff=lfs merge=lfs -text
+obj/Debug/* filter=lfs diff=lfs merge=lfs -text

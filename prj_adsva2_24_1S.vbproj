@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6202C6D-6D1C-4DAA-AD1B-E5AB92B36268}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>prj_adsva2_24_1S.My.MyApplication</StartupObject>
+    <RootNamespace>prj_adsva2_24_1S</RootNamespace>
+    <AssemblyName>VETUS SOFTWARE</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>VETUS SOFTWARE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>VETUS SOFTWARE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconetelas.ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="cadastrar_funcionarios.Designer.vb">
+      <DependentUpon>cadastrar_funcionarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cadastrar_funcionarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cotidianos.Designer.vb">
+      <DependentUpon>cotidianos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cotidianos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mod_global.vb" />
+    <Compile Include="mudar_senha.Designer.vb">
+      <DependentUpon>mudar_senha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mudar_senha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="sala1.Designer.vb">
+      <DependentUpon>sala1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sala1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sala2.Designer.vb">
+      <DependentUpon>sala2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sala2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sala3.Designer.vb">
+      <DependentUpon>sala3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sala3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telaGerente.Designer.vb">
+      <DependentUpon>telaGerente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="telaGerente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela_enfermeiro.Designer.vb">
+      <DependentUpon>tela_enfermeiro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tela_enfermeiro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela_pacientes.Designer.vb">
+      <DependentUpon>tela_pacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tela_pacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela_recep.Designer.vb">
+      <DependentUpon>tela_recep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tela_recep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="cadastrar_funcionarios.resx">
+      <DependentUpon>cadastrar_funcionarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cotidianos.resx">
+      <DependentUpon>cotidianos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mudar_senha.resx">
+      <DependentUpon>mudar_senha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sala1.resx">
+      <DependentUpon>sala1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sala2.resx">
+      <DependentUpon>sala2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sala3.resx">
+      <DependentUpon>sala3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telaGerente.resx">
+      <DependentUpon>telaGerente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tela_enfermeiro.resx">
+      <DependentUpon>tela_enfermeiro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tela_pacientes.resx">
+      <DependentUpon>tela_pacientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tela_recep.resx">
+      <DependentUpon>tela_recep.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{B691E011-1797-432E-907A-4D8C69339129}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\background\T1_enferm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\background\ENF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iconetelas.ico.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
